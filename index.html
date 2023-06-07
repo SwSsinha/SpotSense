@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Parking App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="path/to/leaflet.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Smart Parking App</h1>
+        <div class="vehicle-selection">
+            <h2>Choose Your Vehicle</h2>
+            <button id="two-wheeler-btn">Two-Wheeler</button>
+            <button id="four-wheeler-btn">Four-Wheeler</button>
+        </div>
+        <div class="parking-map">
+            <h2>Parking Slot Map</h2>
+            <div id="map"></div>
+            <script src="leaflet.js"></script>
+
+        </div>
+        <div class="availability">
+            <h2>Slot Availability</h2>
+            <p id="availability-status">Loading...</p>
+        </div>
+        <div class="payment">
+            <h2>Payment</h2>
+            <form id="payment-form">
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" placeholder="Enter card number" required>
+                <label for="expiry-date">Expiry Date:</label>
+                <input type="text" id="expiry-date" placeholder="MM/YY" required>
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" placeholder="CVV" required>
+                <button type="submit">Pay</button>
+            </form>
+        </div>
+    </div>
+    <script src="your-script.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
